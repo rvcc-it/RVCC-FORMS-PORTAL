@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RVCC Employee Portal</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+        NAVIGATION
+============================ -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+
+            <img src="images/logo.png" width="45" class="me-2">
+
+            Company Portal
+
+        </a>
+
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="hr.html">
+                        HR
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="it.html">
+                        IT
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="finance.html">
+                        Finance
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="procurement.html">
+                        Procurement
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="hse.html">
+                        HSE
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="policies.html">
+                        Policies
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Search -->
+
+            <form class="d-flex ms-3">
+
+                <input class="form-control"
+                    id="searchInput"
+                    placeholder="Search Forms">
+
+            </form>
+
+            <!-- Dark Mode -->
+
+            <button
+                class="btn btn-outline-light ms-3"
+                id="darkMode">
+
+                <i class="bi bi-moon-stars-fill"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ===========================
+          HERO
+============================ -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<span class="badge bg-primary mb-3">
+
+Internal Employee Portal
+
+</span>
+
+<h1>
+
+Company Documents &
+Employee Forms
+
+</h1>
+
+<p>
+
+Access HR forms, IT requests,
+Finance documents,
+Policies,
+Company announcements
+and useful links.
+
+</p>
+
+<a href="#forms"
+class="btn btn-primary btn-lg me-2">
+
+Browse Forms
+
+</a>
+
+<a href="policies.html"
+class="btn btn-outline-light btn-lg">
+
+Policies
+
+</a>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img
+src="images/hero.jpg"
+class="img-fluid hero-img">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+      STATISTICS
+============================ -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-3">
+
+<div class="stat-card">
+
+<i class="bi bi-file-earmark-text"></i>
+
+<h2 class="counter">
+
+230
+
+</h2>
+
+<p>
+
+Company Forms
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="stat-card">
+
+<i class="bi bi-building"></i>
+
+<h2 class="counter">
+
+12
+
+</h2>
+
+<p>
+
+Departments
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="stat-card">
+
+<i class="bi bi-journal-text"></i>
+
+<h2 class="counter">
+
+65
+
+</h2>
+
+<p>
+
+Policies
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="stat-card">
+
+<i class="bi bi-clock-history"></i>
+
+<h2>
+
+24/7
+
+</h2>
+
+<p>
+
+Portal Access
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+      QUICK ACCESS
+============================ -->
+
+<section class="container py-5">
+
+<h2 class="section-title">
+
+Quick Access
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-3 col-md-6">
+
+<div class="portal-card">
+
+<i class="bi bi-person-badge-fill"></i>
+
+<h4>HR Forms</h4>
+
+<a href="hr.html"
+class="btn btn-primary">
+
+Open
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="portal-card">
+
+<i class="bi bi-pc-display"></i>
+
+<h4>IT Forms</h4>
+
+<a href="it.html"
+class="btn btn-primary">
+
+Open
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="portal-card">
+
+<i class="bi bi-cash-stack"></i>
+
+<h4>Finance</h4>
+
+<a href="finance.html"
+class="btn btn-primary">
+
+Open
+
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="portal-card">
+
+<i class="bi bi-truck"></i>
+
+<h4>Procurement</h4>
+
+<a href="procurement.html"
+class="btn btn-primary">
+
+Open
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
+        LATEST ANNOUNCEMENTS
+=========================================== -->
+
+<section class="container py-5">
+
+    <div class="row">
+
+        <div class="col-lg-8">
+
+            <h2 class="section-title">
+                <i class="bi bi-megaphone-fill"></i>
+                Latest Announcements
+            </h2>
+
+            <div class="announcement-card">
+
+                <div class="announcement-date">
+                    05 Aug 2026
+                </div>
+
+                <div>
+
+                    <h5>New Leave Policy Released</h5>
+
+                    <p>
+                        HR has updated the Leave Policy.
+                        Please review the latest version before submitting leave requests.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="announcement-card">
+
+                <div class="announcement-date">
+                    01 Aug 2026
+                </div>
+
+                <div>
+
+                    <h5>Holiday Notice</h5>
+
+                    <p>
+                        National Holiday schedule has been published.
+                        Download the holiday calendar from the Policies section.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="announcement-card">
+
+                <div class="announcement-date">
+                    29 Jul 2026
+                </div>
+
+                <div>
+
+                    <h5>IT Maintenance</h5>
+
+                    <p>
+                        Planned server maintenance on Saturday from 8 PM to 11 PM.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Sidebar -->
+
+        <div class="col-lg-4">
+
+            <div class="portal-card text-center">
+
+                <img src="images/company-building.jpg"
+                    class="img-fluid rounded mb-3">
+
+                <h4>Your Company</h4>
+
+                <p>
+
+                    Internal Employee Self Service Portal
+
+                </p>
+
+                <button class="btn btn-primary w-100">
+
+                    Learn More
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            SEARCH SECTION
+=========================================== -->
+
+<section class="search-area">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="search-box">
+
+                    <i class="bi bi-search"></i>
+
+                    <input
+                        type="text"
+                        id="formSearch"
+                        class="form-control"
+                        placeholder="Search Company Forms...">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            POPULAR FORMS
+=========================================== -->
+
+<section class="container py-5" id="forms">
+
+    <h2 class="section-title">
+
+        Popular Forms
+
+    </h2>
+
+    <div class="row g-4">
+
+        <!-- Leave -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="form-card">
+
+                <i class="bi bi-file-earmark-pdf-fill text-danger form-icon"></i>
+
+                <h5>Leave Application</h5>
+
+                <p>Human Resources</p>
+
+                <a href="YOUR_ONEDRIVE_LINK"
+                    target="_blank"
+                    class="btn btn-primary w-100">
+
+                    Download
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Salary -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="form-card">
+
+                <i class="bi bi-file-earmark-word-fill text-primary form-icon"></i>
+
+                <h5>Salary Certificate</h5>
+
+                <p>Finance Department</p>
+
+                <a href="YOUR_ONEDRIVE_LINK"
+                    target="_blank"
+                    class="btn btn-primary w-100">
+
+                    Download
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Asset -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="form-card">
+
+                <i class="bi bi-laptop form-icon"></i>
+
+                <h5>IT Asset Request</h5>
+
+                <p>IT Department</p>
+
+                <a href="YOUR_ONEDRIVE_LINK"
+                    target="_blank"
+                    class="btn btn-primary w-100">
+
+                    Download
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Vehicle -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="form-card">
+
+                <i class="bi bi-truck form-icon"></i>
+
+                <h5>Vehicle Request</h5>
+
+                <p>Administration</p>
+
+                <a href="YOUR_ONEDRIVE_LINK"
+                    target="_blank"
+                    class="btn btn-primary w-100">
+
+                    Download
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Expense -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="form-card">
+
+                <i class="bi bi-cash-stack form-icon"></i>
+
+                <h5>Expense Claim</h5>
+
+                <p>Finance</p>
+
+                <a href="YOUR_ONEDRIVE_LINK"
+                    target="_blank"
+                    class="btn btn-primary w-100">
+
+                    Download
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Medical -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="form-card">
+
+                <i class="bi bi-heart-pulse-fill form-icon"></i>
+
+                <h5>Medical Claim</h5>
+
+                <p>Human Resources</p>
+
+                <a href="YOUR_ONEDRIVE_LINK"
+                    target="_blank"
+                    class="btn btn-primary w-100">
+
+                    Download
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            DEPARTMENTS
+=========================================== -->
+
+<section class="department-section">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Departments
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<a href="hr.html" class="department-card">
+
+<i class="bi bi-person-badge-fill"></i>
+
+<h5>Human Resources</h5>
+
+</a>
+
+</div>
+
+<div class="col-md-3">
+
+<a href="it.html" class="department-card">
+
+<i class="bi bi-pc-display"></i>
+
+<h5>Information Technology</h5>
+
+</a>
+
+</div>
+
+<div class="col-md-3">
+
+<a href="finance.html" class="department-card">
+
+<i class="bi bi-cash-stack"></i>
+
+<h5>Finance</h5>
+
+</a>
+
+</div>
+
+<div class="col-md-3">
+
+<a href="procurement.html" class="department-card">
+
+<i class="bi bi-box-seam"></i>
+
+<h5>Procurement</h5>
+
+</a>
+
+</div>
+
+<div class="col-md-3">
+
+<a href="hse.html" class="department-card">
+
+<i class="bi bi-shield-check"></i>
+
+<h5>HSE</h5>
+
+</a>
+
+</div>
+
+<div class="col-md-3">
+
+<a href="admin.html" class="department-card">
+
+<i class="bi bi-building"></i>
+
+<h5>Administration</h5>
+
+</a>
+
+</div>
+
+<div class="col-md-3">
+
+<a href="policies.html" class="department-card">
+
+<i class="bi bi-journal-bookmark-fill"></i>
+
+<h5>Policies</h5>
+
+</a>
+
+</div>
+
+<div class="col-md-3">
+
+<a href="contact.html" class="department-card">
+
+<i class="bi bi-telephone-fill"></i>
+
+<h5>Contact Directory</h5>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+            COMPANY POLICIES
+========================================== -->
+
+<section class="container py-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h2 class="section-title">
+            <i class="bi bi-journal-check"></i>
+            Company Policies
+        </h2>
+
+        <a href="policies.html" class="btn btn-outline-primary">
+            View All
+        </a>
+
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Policy -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="policy-card">
+
+                <i class="bi bi-person-check-fill"></i>
+
+                <h5>Attendance Policy</h5>
+
+                <p>
+                    Attendance rules, timings and work schedule.
+                </p>
+
+                <a href="YOUR_ONEDRIVE_LINK"
+                    target="_blank"
+                    class="btn btn-primary btn-sm">
+
+                    View Policy
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Policy -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="policy-card">
+
+                <i class="bi bi-airplane-fill"></i>
+
+                <h5>Travel Policy</h5>
+
+                <p>
+
+                    Business travel rules and reimbursement.
+
+                </p>
+
+                <a href="YOUR_ONEDRIVE_LINK"
+                    target="_blank"
+                    class="btn btn-primary btn-sm">
+
+                    View Policy
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Policy -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="policy-card">
+
+                <i class="bi bi-shield-check"></i>
+
+                <h5>HSE Policy</h5>
+
+                <p>
+
+                    Health, Safety & Environment guidelines.
+
+                </p>
+
+                <a href="YOUR_ONEDRIVE_LINK"
+                    target="_blank"
+                    class="btn btn-primary btn-sm">
+
+                    View Policy
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Policy -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="policy-card">
+
+                <i class="bi bi-lock-fill"></i>
+
+                <h5>IT Security</h5>
+
+                <p>
+
+                    Cyber Security & Password Policy.
+
+                </p>
+
+                <a href="YOUR_ONEDRIVE_LINK"
+                    target="_blank"
+                    class="btn btn-primary btn-sm">
+
+                    View Policy
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            USEFUL LINKS
+========================================== -->
+
+<section class="useful-links">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Useful Links
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<a href="https://outlook.office.com"
+target="_blank"
+class="link-card">
+
+<i class="bi bi-envelope-fill"></i>
+
+<h6>Outlook</h6>
+
+</a>
+
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<a href="https://onedrive.live.com"
+target="_blank"
+class="link-card">
+
+<i class="bi bi-cloud-fill"></i>
+
+<h6>OneDrive</h6>
+
+</a>
+
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<a href="#"
+class="link-card">
+
+<i class="bi bi-diagram-3-fill"></i>
+
+<h6>SharePoint</h6>
+
+</a>
+
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<a href="#"
+class="link-card">
+
+<i class="bi bi-laptop-fill"></i>
+
+<h6>ERP</h6>
+
+</a>
+
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<a href="#"
+class="link-card">
+
+<i class="bi bi-people-fill"></i>
+
+<h6>Teams</h6>
+
+</a>
+
+</div>
+
+<div class="col-lg-2 col-md-4 col-6">
+
+<a href="#"
+class="link-card">
+
+<i class="bi bi-life-preserver"></i>
+
+<h6>Helpdesk</h6>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+        CONTACT DIRECTORY
+========================================== -->
+
+<section class="container py-5">
+
+<h2 class="section-title">
+
+Department Contacts
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-3">
+
+<div class="contact-card">
+
+<i class="bi bi-person-workspace"></i>
+
+<h5>Human Resources</h5>
+
+<p>
+
+Email:
+
+hr@company.com
+
+</p>
+
+<p>
+
+Ext : 210
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="contact-card">
+
+<i class="bi bi-pc-display"></i>
+
+<h5>IT Helpdesk</h5>
+
+<p>
+
+Email:
+
+it@company.com
+
+</p>
+
+<p>
+
+Ext : 120
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="contact-card">
+
+<i class="bi bi-cash-stack"></i>
+
+<h5>Finance</h5>
+
+<p>
+
+Email:
+
+finance@company.com
+
+</p>
+
+<p>
+
+Ext : 315
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="contact-card">
+
+<i class="bi bi-building"></i>
+
+<h5>Administration</h5>
+
+<p>
+
+Email:
+
+admin@company.com
+
+</p>
+
+<p>
+
+Ext : 101
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
+        NEWSLETTER / QUICK MESSAGE
+========================================== -->
+
+<section class="newsletter py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+
+                <h2>Stay Updated</h2>
+
+                <p>
+
+                    Check the portal regularly for updated company
+                    forms, HR announcements, policies and internal news.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+
+                <a href="contact.html"
+                    class="btn btn-light btn-lg">
+
+                    Contact IT Support
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+        SCROLL TO TOP
+========================================== -->
+
+<button id="scrollTopBtn" class="scroll-top">
+
+    <i class="bi bi-arrow-up"></i>
+
+</button>
+
+<!-- ==========================================
+        FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Company -->
+
+            <div class="col-lg-4">
+
+                <h4>
+
+                    Company Employee Portal
+
+                </h4>
+
+                <p>
+
+                    Internal employee portal for accessing forms,
+                    company policies,
+                    HR documents,
+                    IT requests,
+                    announcements and useful links.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="col-lg-3">
+
+                <h5>
+
+                    Quick Links
+
+                </h5>
+
+                <ul class="footer-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="hr.html">HR Forms</a></li>
+
+                    <li><a href="it.html">IT Forms</a></li>
+
+                    <li><a href="finance.html">Finance</a></li>
+
+                    <li><a href="procurement.html">Procurement</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Resources -->
+
+            <div class="col-lg-2">
+
+                <h5>
+
+                    Resources
+
+                </h5>
+
+                <ul class="footer-links">
+
+                    <li>
+
+                        <a href="policies.html">
+
+                            Policies
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="contact.html">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            OneDrive
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            Helpdesk
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Social -->
+
+            <div class="col-lg-3">
+
+                <h5>
+
+                    Connect
+
+                </h5>
+
+                <div class="social-icons">
+
+                    <a href="#">
+
+                        <i class="bi bi-envelope-fill"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="bi bi-telephone-fill"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="bi bi-globe"></i>
+
+                    </a>
+
+                    <a href="#">
+
+                        <i class="bi bi-linkedin"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center">
+
+            <p>
+
+                © 2026 RVCC
+
+                |
+
+                Employee Portal Version
+
+                |
+
+                Developed by RVCC IT Department
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ==========================================
+        JAVASCRIPT
+========================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script src="js/search.js"></script>
+
+<script src="js/darkmode.js"></script>
+
+<script src="js/counter.js"></script>
+
+<script src="js/scroll.js"></script>
+
+<script src="js/announcements.js"></script>
+
+</body>
+
+</html>

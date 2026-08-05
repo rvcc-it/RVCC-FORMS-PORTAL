@@ -1,0 +1,399 @@
+/* ==========================================
+   ANIMATIONS.CSS
+========================================== */
+
+/* Fade In */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Fade Up */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.fade-up {
+
+    animation: fadeUp .8s ease forwards;
+
+}
+
+/* Slide Left */
+
+@keyframes slideLeft {
+
+    from {
+
+        transform: translateX(-60px);
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        transform: translateX(0);
+
+        opacity: 1;
+
+    }
+
+}
+
+.slide-left {
+
+    animation: slideLeft .8s ease;
+
+}
+
+/* Slide Right */
+
+@keyframes slideRight {
+
+    from {
+
+        transform: translateX(60px);
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        transform: translateX(0);
+
+        opacity: 1;
+
+    }
+
+}
+
+.slide-right {
+
+    animation: slideRight .8s ease;
+
+}
+
+/* Zoom */
+
+@keyframes zoom {
+
+    from {
+
+        transform: scale(.8);
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+.zoom {
+
+    animation: zoom .6s ease;
+
+}
+
+/* Floating */
+
+@keyframes floating {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.float {
+
+    animation: floating 3s ease-in-out infinite;
+
+}
+
+/* Rotate */
+
+@keyframes rotateIcon {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+.rotate:hover {
+
+    animation: rotateIcon .8s linear;
+
+}
+
+/* Pulse */
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.08);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+.pulse:hover {
+
+    animation: pulse .6s;
+
+}
+
+/* Bounce */
+
+@keyframes bounce {
+
+    0%,100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-12px);
+
+    }
+
+}
+
+.bounce:hover {
+
+    animation: bounce .6s;
+
+}
+
+/* Card Hover */
+
+.portal-card,
+.form-card,
+.policy-card,
+.contact-card,
+.department-card{
+
+    transition:all .35s ease;
+
+}
+
+.portal-card:hover,
+.form-card:hover,
+.policy-card:hover,
+.contact-card:hover,
+.department-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* Button Hover */
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* Icon Hover */
+
+i{
+
+    transition:.3s;
+
+}
+
+.portal-card:hover i,
+.department-card:hover i,
+.contact-card:hover i{
+
+    transform:scale(1.15);
+
+}
+
+/* Hero Image */
+
+.hero-img{
+
+    animation:floating 5s ease-in-out infinite;
+
+}
+
+/* Scroll Reveal */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* Loader */
+
+.loader{
+
+    width:60px;
+
+    height:60px;
+
+    border:6px solid #ddd;
+
+    border-top:6px solid #0d6efd;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    100%{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* Ripple Button */
+
+.btn-ripple{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn-ripple::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:0;
+
+    background:rgba(255,255,255,.4);
+
+    border-radius:50%;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    transition:.6s;
+
+}
+
+.btn-ripple:hover::after{
+
+    width:300px;
+
+    height:300px;
+
+}
+
+/* Smooth Page */
+
+body{
+
+    animation:fadeIn .6s;
+
+}

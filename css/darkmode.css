@@ -1,0 +1,229 @@
+/* ==========================================
+   DARK MODE
+========================================== */
+
+body.dark-mode{
+
+    background:#121212;
+    color:#e8e8e8;
+}
+
+/* Navbar */
+
+body.dark-mode .navbar{
+
+    background:linear-gradient(135deg,#111827,#1f2937);
+
+}
+
+/* Hero */
+
+body.dark-mode .hero{
+
+    background:linear-gradient(135deg,#111827,#1e3a8a);
+
+}
+
+/* Cards */
+
+body.dark-mode .portal-card,
+body.dark-mode .form-card,
+body.dark-mode .policy-card,
+body.dark-mode .contact-card,
+body.dark-mode .stat-card,
+body.dark-mode .announcement-card,
+body.dark-mode .dashboard-widget,
+body.dark-mode .category-card,
+body.dark-mode .document-item{
+
+    background:#1f2937;
+    color:#f5f5f5;
+    border:1px solid #374151;
+
+}
+
+/* Text */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6{
+
+    color:#ffffff;
+
+}
+
+body.dark-mode p{
+
+    color:#d1d5db;
+
+}
+
+body.dark-mode .section-title{
+
+    color:#ffffff;
+
+}
+
+/* Search */
+
+body.dark-mode .search-area{
+
+    background:#111827;
+
+}
+
+body.dark-mode .search-box input{
+
+    background:#374151;
+    color:#ffffff;
+    border:1px solid #4b5563;
+
+}
+
+body.dark-mode .search-box input::placeholder{
+
+    color:#cbd5e1;
+
+}
+
+/* Table */
+
+body.dark-mode .table{
+
+    background:#1f2937;
+    color:white;
+
+}
+
+body.dark-mode .table td{
+
+    border-color:#374151;
+
+}
+
+body.dark-mode .table tbody tr:hover{
+
+    background:#2d3748;
+
+}
+
+/* Department Section */
+
+body.dark-mode .department-section{
+
+    background:#111827;
+
+}
+
+/* Useful Links */
+
+body.dark-mode .link-card{
+
+    background:#1f2937;
+    color:white;
+
+}
+
+body.dark-mode .link-card:hover{
+
+    background:#2563eb;
+
+}
+
+/* Newsletter */
+
+body.dark-mode .newsletter{
+
+    background:linear-gradient(135deg,#111827,#1e293b);
+
+}
+
+/* Footer */
+
+body.dark-mode .footer{
+
+    background:#0b1120;
+
+}
+
+/* Forms */
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select{
+
+    background:#374151;
+    color:white;
+    border:1px solid #4b5563;
+
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder{
+
+    color:#cbd5e1;
+
+}
+
+/* Buttons */
+
+body.dark-mode .btn-primary{
+
+    background:#2563eb;
+
+}
+
+body.dark-mode .btn-outline-primary{
+
+    color:#60a5fa;
+    border-color:#60a5fa;
+
+}
+
+body.dark-mode .btn-outline-primary:hover{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+/* Scroll Button */
+
+body.dark-mode .scroll-top{
+
+    background:#2563eb;
+
+}
+
+/* Footer Links */
+
+body.dark-mode .footer-links a{
+
+    color:#cbd5e1;
+
+}
+
+body.dark-mode .footer-links a:hover{
+
+    color:#ffffff;
+
+}
+
+/* Smooth Transition */
+
+body,
+.navbar,
+.portal-card,
+.form-card,
+.policy-card,
+.contact-card,
+.footer,
+.hero,
+.department-section{
+
+    transition:all .4s ease;
+
+}
