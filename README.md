@@ -214,7 +214,7 @@ Change company name
 
 Replace
 
-Company Portal
+
 
 throughout the project
 
