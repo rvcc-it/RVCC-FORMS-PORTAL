@@ -31,6 +31,42 @@ password:"Adil@2026",
 role:"Administrator"
 
 },
+{
+
+username:"Mathew",
+
+password:"Mathew@2026",
+
+role:"Administrator"
+
+},
+{
+
+username:"Suhaib",
+
+password:"Suhaib@2026",
+
+role:"IT"
+
+},
+{
+
+username:"Shahanas",
+
+password:"Shahanas@2026",
+
+role:"Administrator"
+
+},
+{
+
+username:"Akshay",
+
+password:"Akshay@2026",
+
+role:"Employee"
+
+},
 
 {
 
