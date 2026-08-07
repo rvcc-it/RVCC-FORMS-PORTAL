@@ -275,6 +275,22 @@ return new bootstrap.Popover(el);
 
 });
 
+/* Logout */
+
+const logoutBtn = document.getElementById("logoutBtn");
+
+if (logoutBtn) {
+
+logoutBtn.addEventListener("click", function () {
+
+sessionStorage.clear();
+
+window.location.href = "login.html";
+
+});
+
+}
+
 /* ==========================================================
    END OF FILE
 ========================================================== */

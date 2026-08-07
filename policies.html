@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Company Policies | Company Employee Portal</title>
+<title>RVCC Policies | RVCC Employee Portal</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -19,50 +19,153 @@
 </head>
 
 <body>
+<!-- ================= NAVBAR ================= -->
 
-<!-- NAVBAR -->
-
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
 
 <div class="container">
 
-<a class="navbar-brand" href="index.html">
+    <!-- Logo -->
 
-<img src="images/logo.png" width="40">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
 
-Company Portal
+        <img src="images/logo.png"
+             width="40"
+             class="me-2 rounded-circle bg-white p-1">
 
-</a>
+        RVCC Portal
 
-<button class="navbar-toggler"
+    </a>
 
-data-bs-toggle="collapse"
+    <!-- Mobile Menu -->
 
-data-bs-target="#navbar">
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar">
 
-<span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
 
-</button>
+    </button>
 
-<div class="collapse navbar-collapse" id="navbar">
+    <div class="collapse navbar-collapse" id="navbar">
 
-<ul class="navbar-nav ms-auto">
+        <!-- Left Navigation -->
 
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <ul class="navbar-nav mx-auto">
 
-<li class="nav-item"><a class="nav-link active" href="policies.html">Policies</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="bi bi-house-door"></i> Home
+                </a>
+            </li>
 
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="hr.html">
+                    HR
+                </a>
+            </li>
 
-</ul>
+            <li class="nav-item">
+                <a class="nav-link" href="it.html">
+                    IT
+                </a>
+            </li>
 
-<button id="darkMode" class="btn btn-outline-light ms-3">
+            <li class="nav-item">
+                <a class="nav-link" href="finance.html">
+                    Finance
+                </a>
+            </li>
 
-<i class="bi bi-moon-stars-fill"></i>
+            <li class="nav-item">
+                <a class="nav-link" href="procurement.html">
+                    Procurement
+                </a>
+            </li>
 
-</button>
+            <li class="nav-item">
+                <a class="nav-link" href="admin.html">
+                    Admin
+                </a>
+            </li>
 
-</div>
+            <li class="nav-item">
+
+                <a class="nav-link"
+                   href="qhse.html">
+
+                    QHSE
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link"
+                   href="policies.html">
+
+                    Policies
+
+                </a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a class="nav-link"
+                   href="contact.html">
+
+                    Contact
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <!-- Right Side -->
+
+        <div class="d-flex align-items-center">
+
+            <!-- Dark Mode -->
+
+            <button id="darkMode"
+
+                    class="btn btn-outline-light btn-sm me-2">
+
+                <i class="bi bi-moon-stars-fill"></i>
+
+            </button>
+
+            <!-- User -->
+
+            <span
+
+                id="userLabel"
+
+                class="badge bg-primary fs-6 me-2 px-3 py-2">
+
+            </span>
+
+            <!-- Logout -->
+
+            <button
+
+                id="logoutBtn"
+
+                class="btn btn-danger btn-sm">
+
+                <i class="bi bi-box-arrow-right"></i>
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </div>
 
 </div>
 
@@ -76,11 +179,11 @@ data-bs-target="#navbar">
 
 <i class="bi bi-journal-bookmark-fill display-2 mb-3"></i>
 
-<h1>Company Policies</h1>
+<h1>RVCC Policies</h1>
 
 <p>
 
-Browse and download company policies and procedures.
+Browse and download RVCC policies and procedures.
 
 </p>
 
@@ -322,7 +425,7 @@ View Policy
 
 <h2 class="counter">45</h2>
 
-<p>Company Policies</p>
+<p>RVCC Policies</p>
 
 </div>
 
@@ -368,7 +471,7 @@ View Policy
 
 <p>
 
-© <span id="currentYear"></span> Company Employee Portal
+© <span id="currentYear"></span> RVCC Employee Portal
 
 </p>
 
@@ -383,7 +486,8 @@ View Policy
 </button>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="js/auth.js"></script>
+<script src="js/user.js"></script>
 <script src="js/script.js"></script>
 <script src="js/search.js"></script>
 <script src="js/darkmode.js"></script>
