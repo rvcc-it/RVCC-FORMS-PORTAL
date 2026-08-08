@@ -33,6 +33,24 @@ role:"Administrator"
 },
 {
 
+username:"Varsha",
+
+password:"Varsha@2026",
+
+role:"Administrator"
+
+},
+{
+
+username:"Aryan",
+
+password:"Aryan@2026",
+
+role:"Administrator"
+
+},
+{
+
 username:"Mathew",
 
 password:"Mathew@2026",
