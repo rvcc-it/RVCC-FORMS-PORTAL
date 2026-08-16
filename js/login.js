@@ -124,7 +124,15 @@ password:"IT@123",
 role:"IT"
 
 },
+{
 
+username:"Naseer",
+
+password:"Naseer@2026",
+
+role:"Employee"
+
+},
 {
 
 username:"employee",
