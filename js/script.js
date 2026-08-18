@@ -27,6 +27,8 @@ function initializePortal(){
 
     cardEffects();
 
+    clickableCards();
+
     welcomeMessage();
 
 }
@@ -160,6 +162,42 @@ function cardEffects(){
         card.addEventListener("mouseleave",()=>{
 
             card.style.transform="translateY(0px)";
+
+        });
+
+    });
+
+}
+
+/* ==========================================================
+   CLICKABLE CARDS (Open box or button)
+========================================================== */
+
+function clickableCards(){
+
+    const cards=document.querySelectorAll(".portal-card,.form-card,.policy-card");
+
+    cards.forEach(card=>{
+
+        const link=card.querySelector("a[href]");
+
+        if(!link) return;
+
+        card.style.cursor="pointer";
+
+        card.addEventListener("click",(e)=>{
+
+            if(e.target.closest("a")) return;
+
+            if(link.target==="_blank"){
+
+                window.open(link.href,"_blank");
+
+            }else{
+
+                window.location.href=link.href;
+
+            }
 
         });
 
