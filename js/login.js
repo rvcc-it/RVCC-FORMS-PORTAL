@@ -141,6 +141,15 @@ password:"Company@123",
 
 role:"Employee"
 
+},
+{
+
+username:"demo",
+
+password:"Rvcc@2026",
+
+role:"Employee"
+
 }
 
 ];

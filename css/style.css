@@ -407,6 +407,10 @@ margin-top:10px;
 
 .portal-card:hover{
 
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+    color:#fff;
+
     transform:translateY(-10px);
 
     box-shadow:0 25px 40px rgba(13,110,253,.18);
@@ -581,6 +585,10 @@ margin-top:10px;
 
 .form-card:hover{
 
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+    color:#fff;
+
     transform:translateY(-10px);
 
     box-shadow:0 20px 35px rgba(0,0,0,.15);
@@ -693,9 +701,11 @@ margin-top:10px;
 
 .policy-card:hover{
 
-    transform:translateY(-8px);
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
 
-    border-top:5px solid var(--primary);
+    color:#fff;
+
+    transform:translateY(-8px);
 
 }
 
@@ -804,9 +814,11 @@ margin-top:10px;
 
 .contact-card:hover{
 
-    transform:translateY(-10px);
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
 
-    border-top:5px solid var(--primary);
+    color:#fff;
+
+    transform:translateY(-10px);
 
 }
 
@@ -1145,6 +1157,50 @@ margin-top:10px;
     overflow:hidden;
 
     position:relative;
+
+}
+
+.portal-card:hover h4,
+.form-card:hover h5,
+.policy-card:hover h5,
+.contact-card:hover h5{
+
+    color:#fff;
+
+}
+
+.portal-card:hover i,
+.form-card:hover i,
+.policy-card:hover i,
+.contact-card:hover i{
+
+    color:#fff !important;
+
+}
+
+.portal-card:hover p,
+.form-card:hover p,
+.policy-card:hover p,
+.contact-card:hover p{
+
+    color:rgba(255,255,255,.85);
+
+}
+
+.portal-card:hover .btn,
+.form-card:hover .btn,
+.policy-card:hover .btn{
+
+    background:#fff;
+    color:var(--primary);
+
+}
+
+.portal-card:hover .btn:hover,
+.form-card:hover .btn:hover,
+.policy-card:hover .btn:hover{
+
+    background:#eef5ff;
 
 }
 

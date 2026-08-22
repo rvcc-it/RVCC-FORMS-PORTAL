@@ -50,7 +50,11 @@ body.dark-mode .department-card i{
 
 }
 
-body.dark-mode .department-card:hover{
+body.dark-mode .department-card:hover,
+body.dark-mode .portal-card:hover,
+body.dark-mode .form-card:hover,
+body.dark-mode .policy-card:hover,
+body.dark-mode .contact-card:hover{
 
     background:linear-gradient(135deg,var(--primary),var(--secondary));
 
@@ -58,9 +62,40 @@ body.dark-mode .department-card:hover{
 
 body.dark-mode .department-card:hover,
 body.dark-mode .department-card:hover h5,
-body.dark-mode .department-card:hover i{
+body.dark-mode .portal-card:hover h4,
+body.dark-mode .form-card:hover h5,
+body.dark-mode .policy-card:hover h5,
+body.dark-mode .contact-card:hover h5{
 
     color:#ffffff;
+
+}
+
+body.dark-mode .department-card:hover i,
+body.dark-mode .portal-card:hover i,
+body.dark-mode .form-card:hover i,
+body.dark-mode .policy-card:hover i,
+body.dark-mode .contact-card:hover i{
+
+    color:#ffffff !important;
+
+}
+
+body.dark-mode .portal-card:hover p,
+body.dark-mode .form-card:hover p,
+body.dark-mode .policy-card:hover p,
+body.dark-mode .contact-card:hover p{
+
+    color:rgba(255,255,255,.85);
+
+}
+
+body.dark-mode .portal-card:hover .btn,
+body.dark-mode .form-card:hover .btn,
+body.dark-mode .policy-card:hover .btn{
+
+    background:#ffffff;
+    color:var(--primary);
 
 }
 
