@@ -104,7 +104,7 @@ Upload your PDF, Word or Excel files to Microsoft OneDrive.
 
 Example:
 
-Leave Application.pdf
+Vacation Leave Application.pdf
 
 Expense Claim.xlsx
 
