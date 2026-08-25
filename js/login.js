@@ -145,6 +145,15 @@ role:"Employee"
 },
 {
 
+username:"Test",
+
+password:"Test@2026",
+
+role:"Employee"
+
+},
+{
+
 username:"employee",
 
 password:"Company@123",
