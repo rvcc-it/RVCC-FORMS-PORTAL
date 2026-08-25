@@ -13,112 +13,75 @@
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
 <link rel="stylesheet" href="css/login.css">
 
 </head>
 
 <body>
 
-<div class="overlay">
+<div class="login-page">
 
-<div class="container">
+<div class="login-shell">
 
-<div class="row justify-content-center align-items-center vh-100">
+<!-- LEFT : FORM -->
 
-<div class="col-lg-5">
+<div class="login-left">
 
-<div class="login-card">
+<div class="login-left-inner">
 
-<div class="text-center">
+<img src="images/logo.png" class="login-logo-circle" alt="RVCC">
 
-<img src="images/logo.png" class="logo">
+<h1 class="brand-title">RVCC Employee Portal</h1>
 
-<h2 class="mt-3 fw-bold">
-
-RVCC Employee Portal
-
-</h2>
-
-<p class="subtitle">
-
-Secure Employee Login
-
-</p>
-
-</div>
+<p class="brand-subtitle">Secure employee access</p>
 
 <div class="welcome-box">
 
-<h5>
+<div class="welcome-icon">
+<i class="bi bi-shield-check"></i>
+</div>
 
-Welcome Back
-
-</h5>
-
-<p>
-
-Please sign in using your employee credentials.
-
-</p>
+<div>
+<h3>Welcome Back</h3>
+<p>Sign in with your employee credentials to access company forms, documents, policies and resources.</p>
+</div>
 
 </div>
 
 <form id="loginForm">
 
-<div class="mb-3">
+<div class="field">
 
-<label class="form-label">
-
-Username
-
-</label>
-
-<div class="input-group">
-
-<span class="input-group-text">
-
-<i class="bi bi-person-fill"></i>
-
-</span>
+<label for="username">Username <span>*</span></label>
 
 <input
 type="text"
 id="username"
-class="form-control"
-placeholder="Employee Username"
+autocomplete="username"
 required>
 
 </div>
 
-</div>
+<div class="field">
 
-<div class="mb-3">
+<label for="password">Password <span>*</span></label>
 
-<label class="form-label">
-
-Password
-
-</label>
-
-<div class="input-group">
-
-<span class="input-group-text">
-
-<i class="bi bi-lock-fill"></i>
-
-</span>
+<div class="password-wrap">
 
 <input
 type="password"
 id="password"
-class="form-control"
-placeholder="Password"
+autocomplete="current-password"
 required>
 
 <button
 type="button"
-class="btn btn-outline-secondary"
-id="togglePassword">
+id="togglePassword"
+aria-label="Show password">
 
 <i class="bi bi-eye-fill"></i>
 
@@ -128,79 +91,116 @@ id="togglePassword">
 
 </div>
 
-<div class="d-flex justify-content-between mb-3">
+<div class="form-row">
 
-<div class="form-check">
-
-<input
-type="checkbox"
-class="form-check-input"
-id="rememberMe">
-
-<label class="form-check-label">
-
-Remember Me
-
+<label class="remember-check">
+<input type="checkbox" id="rememberMe">
+Remember me
 </label>
 
-</div>
-
-<a href="#" class="forgot-link">
-
-Forgot Password?
-
-</a>
+<a href="#" class="forgot-link">Forgot password?</a>
 
 </div>
 
-<div class="d-grid">
-
-<button
-type="submit"
-class="btn btn-primary btn-lg">
-
-<i class="bi bi-box-arrow-in-right"></i>
-
-Login
-
+<button type="submit" class="signin-btn">
+Sign In
+<i class="bi bi-arrow-right"></i>
 </button>
 
-</div>
-
-<p id="error" class="text-danger text-center mt-3"></p>
+<p id="error" class="error-text"></p>
 
 </form>
 
-<hr>
+<hr class="login-divider">
 
-<div class="info">
+<div class="login-meta">
 
 <div>
-
-<i class="bi bi-shield-lock-fill"></i>
-
+<i class="bi bi-lock-fill"></i>
 Authorized Employees Only
-
 </div>
 
 <div>
-
 <i class="bi bi-headset"></i>
-
 IT Helpdesk: it.support@rvce.com.sa
-
 </div>
 
 <div id="clock"></div>
 
 </div>
 
+<p class="login-copy">
+© 2026 RVCC &middot; Developed by RVCC IT Department
+</p>
+
 </div>
 
-<div class="footer">
+</div>
 
-© Developed by RVCC IT DEPT. | Employee Forms Portal
+<!-- RIGHT : SHOWCASE -->
 
+<div class="login-right">
+
+<div class="right-decor right-decor-1"></div>
+<div class="right-decor right-decor-2"></div>
+
+<span class="badge-pill">
+<i class="badge-dot"></i>
+Internal Employee Portal
+</span>
+
+<h2 class="right-title">
+Everything you need,<br>
+in one place.
+</h2>
+
+<p class="right-subtitle">
+Access company forms, policies, department resources and internal documents through the RVCC Employee Portal.
+</p>
+
+<div class="feature-list">
+
+<div class="feature-item">
+<div class="feature-icon"><i class="bi bi-file-earmark-text-fill"></i></div>
+<div>
+<h5>Employee Forms</h5>
+<p>Quickly access HR, Finance, IT, QHSE and departmental forms.</p>
+</div>
+</div>
+
+<div class="feature-item">
+<div class="feature-icon"><i class="bi bi-building"></i></div>
+<div>
+<h5>Department Resources</h5>
+<p>Find resources and documents specific to your department.</p>
+</div>
+</div>
+
+<div class="feature-item">
+<div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+<div>
+<h5>Policies &amp; Procedures</h5>
+<p>Access the latest company policies and procedures.</p>
+</div>
+</div>
+
+<div class="feature-item">
+<div class="feature-icon"><i class="bi bi-cloud-fill"></i></div>
+<div>
+<h5>Centralized Documents</h5>
+<p>Access important company documents from one location.</p>
+</div>
+</div>
+
+</div>
+
+<div class="secure-box">
+
+<div class="secure-icon"><i class="bi bi-shield-fill-check"></i></div>
+
+<div>
+<h5>Secure Internal Access</h5>
+<p>This portal is intended for authorized RVCC employees only.</p>
 </div>
 
 </div>

@@ -132,6 +132,16 @@ password:"Naseer@2026",
 
 role:"Employee"
 
+}
+,
+{
+
+username:"Mushin",
+
+password:"Mushin@2026",
+
+role:"Employee"
+
 },
 {
 
