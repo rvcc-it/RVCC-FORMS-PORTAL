@@ -21,6 +21,8 @@ function initializeAnnouncements() {
 
     highlightLatestAnnouncement();
 
+    updateNextThursdayDate();
+
 }
 
 /* ==========================================================
@@ -86,6 +88,36 @@ function updateCurrentDate() {
 
     dateElement.textContent =
         today.toLocaleDateString("en-US", options);
+
+}
+
+/* ==========================================================
+   NEXT THURSDAY DATE (IT Maintenance - recurs weekly)
+========================================================== */
+
+function updateNextThursdayDate() {
+
+    const dateElement = document.getElementById("itMaintenanceDate");
+
+    if (!dateElement) return;
+
+    const months = [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"
+    ];
+
+    const today = new Date();
+
+    const daysUntilThursday = (4 - today.getDay() + 7) % 7;
+
+    const nextThursday = new Date(today);
+    nextThursday.setDate(today.getDate() + daysUntilThursday);
+
+    const day = String(nextThursday.getDate()).padStart(2, "0");
+    const month = months[nextThursday.getMonth()];
+    const year = nextThursday.getFullYear();
+
+    dateElement.textContent = `${day} ${month} ${year}`;
 
 }
 
