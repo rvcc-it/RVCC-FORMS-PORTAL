@@ -60,6 +60,42 @@ role:"Administrator"
 },
 {
 
+username:"Anil",
+
+password:"Anil@2026",
+
+role:"Administrator"
+
+},
+{
+
+username:"Ragesh",
+
+password:"Ragesh@2026",
+
+role:"Administrator"
+
+},
+{
+
+username:"Sooraj",
+
+password:"Sooraj@2026",
+
+role:"Administrator"
+
+},
+{
+
+username:"Shamna",
+
+password:"Shamna@2026",
+
+role:"Administrator"
+
+},
+{
+
 username:"Suhaib",
 
 password:"Suhaib@2026",
@@ -165,7 +201,7 @@ role:"Employee"
 
 username:"demo",
 
-password:"Rvcc@2026",
+password:"demo@2026",
 
 role:"Employee"
 
